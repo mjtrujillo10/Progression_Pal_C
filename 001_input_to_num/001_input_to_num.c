@@ -17,36 +17,77 @@ int main()
 	scanf("%s", rn_chord);
 
 
-
-
-	// Numeral to Input
-	if (strcmp(rn_chord,"i") == 0 || strcmp(rn_chord, "I") == 0)
+////Numeral to Input////
+	if (strcmp(rn_chord,"i") == 0)
+	{
+        num_out = -1;
+	}
+	else if (strcmp(rn_chord, "I") == 0)
 	{
         num_out = 1;
 	}
-	else if (strcmp(rn_chord, "ii") == 0 || strcmp(rn_chord, "II") == 0)
+	else if (strcmp(rn_chord, "ii") == 0)
 	{
-	num_out = 2;
+        num_out = -2;
 	}
-	else if (strcmp(rn_chord, "iii") == 0 || strcmp(rn_chord, "III") == 0)
+	else if (strcmp(rn_chord, "II") == 0)
 	{
-	num_out= 
+        num_out = 2;
 	}
-	else if (strcmp(rn_chord, "iv") == 0 || strcmp(rn_chord, "IV") == 0)
-	else if (strcmp(rn_chord, "v") == 0 || strcmp(rn_chord, "V") == 0)
-	
-	
-	
-	
-	
+	else if (strcmp(rn_chord, "iii") == 0)
+	{
+        num_out = -3;
+	}
+    else if (strcmp(rn_chord, "III") == 0)
+	{
+        num_out = 3;
+	}
+	else if (strcmp(rn_chord, "iv") == 0)
+	{
+        num_out = -4;
+	}
+    else if (strcmp(rn_chord, "IV") == 0)
+	{
+        num_out = 4;
+	}
+	else if (strcmp(rn_chord, "v") == 0)
+	{
+        num_out = -5;
+	}
+	else if (strcmp(rn_chord, "V") == 0)
+	{
+        num_out = 5;
+	}
+	else if (strcmp(rn_chord, "vi") == 0)
+	{
+        num_out = -6;
+	}
+	else if (strcmp(rn_chord, "VI") == 0)
+	{
+        num_out = 6;
+	}
+	else if (strcmp(rn_chord, "vii") == 0)
+	{
+        num_out = -7;
+	}
+	else if (strcmp(rn_chord, "VII") == 0)
+	{
+        num_out = 7;
+	}
 	else
 	{
-		printf("Fuck nope...\n");
+        num_out = 0;
+		printf("ERROR: Input to num_out invalid.\n");
 	}
 
-
-
-
+    if (num_out != 0)
+    {
+        printf("\nCurrent value of num_out is %d.\n", num_out);
+    }
+    else
+    {
+        printf("\nERROR: Num_out error.\n");
+    }
 
 
 }
