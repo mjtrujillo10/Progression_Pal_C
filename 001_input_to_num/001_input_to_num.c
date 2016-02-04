@@ -7,7 +7,7 @@ int main()
 {
 	// Declare variables
 	char rn_chord[6], num_chord[128];
-    int num_out;
+	int num_out;
 
 	// Compared upper/lowercase RN variables
 	char iv_low[] = "iv", iv_up[] = "IV", vi_low[] = "vi", vi_up[] = "VI", vii_low[] = "vii", vii_up[] = "VII";
@@ -17,7 +17,7 @@ int main()
 	scanf("%s", rn_chord);
 
 
-////Numeral to Input////
+	// Numeral to Number
 	if (strcmp(rn_chord,"i") == 0)
 	{
         num_out = -1;
