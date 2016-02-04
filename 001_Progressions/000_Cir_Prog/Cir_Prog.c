@@ -10,7 +10,7 @@ int main()
 	printf("What chord are you currently using? (input should be 1 through 7)\n");
 	scanf("%d", &CUR_CHORD_NUM);
 
-	//Progression switch
+	//Circle Progression switch
 
 	switch (CUR_CHORD_NUM)
 	{
